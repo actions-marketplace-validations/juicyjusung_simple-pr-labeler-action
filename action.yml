@@ -1,0 +1,17 @@
+name: 'Simple PR labeler'
+description: "Add label to PR by simple list"
+author: '@juicyjusung'
+inputs:
+  repo-token:
+    required: true
+    description: 'The GITHUB_TOKEN secret'
+  labels:
+    description: 'The string of tags to add to the PR (ex: "foo, bar")'
+    required: false
+    default: ''
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: 'users'
+  color: 'blue'
