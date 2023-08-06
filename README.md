@@ -24,5 +24,6 @@ jobs:
     - uses: juicyjusung/simple-pr-labeler-action@v1.0.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        labels: foo, bar
 ```
 
